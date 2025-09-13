@@ -3,7 +3,7 @@
     "name": "G Vibu Vignesh",
     "label": "AI Engineer",
     "image": "",
-    "email": "gviboognesh99@gmail.com",
+    "email": "viboognesh1999@gmail.com",
     "phone": "9123503384",
     "url": "https://registry.jsonresume.org/viboognesh",
     "summary": "An accomplished AI Engineer with a strong background in developing high-performance AI inference servers using Python FastAPI and Robyn framework. Proficient in leveraging and integrating cutting-edge AI technologies, including OpenAI, Anthropic, and Hugging Face models, with expertise in fine-tuning Hugging Face models and deploying open-source LLMs via vLLM. Experienced in building robust LLM agents with LangGraph and N8N for automation, and skilled in utilizing Rust's Candle and Candle-vLLM libraries for efficient LLM inference.",
@@ -40,13 +40,7 @@
         "Built and maintained FastAPI endpoints for seamless interaction between the AI backend and the frontend application.",
         "Deployed LLMs using candle-rust library for faster LLM inference using Rust Programming Language"
       ],
-      "skills": [
-        "Python Programming",
-        "RAG Applications",
-        "LLM Agents",
-        "candle-rust",
-        "FastAPI"
-      ]
+      "skills": ["Python", "RAG Applications", "LLM Agents", "Rust"]
     },
     {
       "name": "Upwork (Remote)",
@@ -59,7 +53,8 @@
         "Developed a CSV-based chatbot leveraging Langchain's Pandas agent framework for data interaction and analysis.",
         "Created a web-search-enabled chatbot integrating DuckDuckGo to answer queries with real-time information.",
         "Enhanced overall chatbot functionality using Python and various OpenAI models."
-      ]
+      ],
+      "skills": ["Python", "RAG Applications"]
     },
     {
       "name": "Gilbert Research Institute (Coimbatore)",
@@ -72,7 +67,8 @@
         "Utilized PyTorch and Convolutional Neural Networks (CNNs) to build and train the segmentation models.",
         "Communicated effectively with faculty and staff, incorporating feedback for improvement.",
         "Collaborated within teams to analyze problems and develop data-driven solutions."
-      ]
+      ],
+      "skills": ["Python", "Deep Learning"]
     }
   ],
   "volunteer": [
@@ -83,7 +79,8 @@
       "startDate": "2025-07-10",
       "endDate": "2025-07-15",
       "summary": "Bug Fix Contribution in gpt-reasearcher project",
-      "highlights": []
+      "highlights": [],
+      "skills": ["Python", "LLM Agents"]
     }
   ],
   "education": [
@@ -98,87 +95,6 @@
   "awards": [],
   "certificates": [],
   "publications": [],
-  "skills": [
-    {
-      "name": "AI Inference Server Development",
-      "level": "Master",
-      "keywords": [
-        "REST APIs",
-        "Asynchronous Programming",
-        "vLLM",
-        "Python",
-        "LLM Deployment",
-        "Model Serving"
-      ]
-    },
-    {
-      "name": "Python FastAPI",
-      "level": "Master",
-      "keywords": [
-        "Web Framework",
-        "API Development",
-        "Asynchronous Python",
-        "Pydantic",
-        "RESTful Services"
-      ]
-    },
-    {
-      "name": "Rust",
-      "level": "Intermediate",
-      "keywords": [
-        "Systems Programming",
-        "Axum Framework",
-        "REST APIS",
-        "WebAssembly"
-      ]
-    },
-    {
-      "name": "Javascript",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend (Node.js)",
-        "ES6+",
-        "Asynchronous JavaScript"
-      ]
-    },
-    {
-      "name": "Docker",
-      "level": "Intermediate",
-      "keywords": [
-        "Containerization",
-        "Microservices",
-        "Deployment",
-        "DevOps",
-        "Orchestration",
-        "Docker Compose"
-      ]
-    },
-    {
-      "name": "Github Actions",
-      "level": "Beginner",
-      "keywords": [
-        "CI/CD",
-        "Automation",
-        "Workflow Automation",
-        "DevOps",
-        "Version Control Integration"
-      ]
-    },
-    {
-      "name": "GoLang",
-      "level": "Beginner",
-      "keywords": [
-        "Backend Development",
-        "Concurrency",
-        "Microservices",
-        "High Performance",
-        "Goroutines",
-        "Channels"
-      ]
-    }
-  ],
   "languages": [
     {
       "language": "English",
@@ -204,10 +120,23 @@
       "highlights": [
         "Built with Rust, ensuring high performance and memory safety.",
         "Uses Tokio's asynchronous runtime to perform concurrent connection attempts, drastically reducing scan time.",
-        "Features a configurable command-line interface with `clap` for specifying target IP and custom port ranges.",
+        "Features a configurable command-line interface with clap for specifying target IP and custom port ranges.",
         "Incorporates a timeout mechanism to prevent the program from hanging on unresponsive ports."
       ],
-      "url": "https://github.com/viboognesh/async-rust-port-scanner"
+      "url": "https://github.com/viboognesh/async-rust-port-scanner",
+      "skills": ["Rust", "CLI Tools"]
+    },
+    {
+      "name": "Rust Zero-Knowledge Proof Authentication System",
+      "description": "A secure client-server authentication system that utilizes Zero-Knowledge Proofs (ZKP) to allow users to authenticate without ever revealing their passwords. The system is built with Rust and uses gRPC for efficient and robust communication.",
+      "highlights": [
+        "Implements Zero-Knowledge Proofs for a secure, privacy-preserving authentication process.",
+        "Uses gRPC with Protocol Buffers for defining service contracts and enabling high-performance, language-agnostic communication.",
+        "Written in Rust, guaranteeing memory safety, concurrency, and high performance.",
+        "Eliminates the risk of password interception by never transmitting the actual password over the network."
+      ],
+      "url": "https://github.com/viboognesh/rust-zkp-server",
+      "skills": ["Rust", "gRPC", "Zero-Knowledge Proofs", "Docker"]
     },
     {
       "name": "Rust Distributed Chat Server",
@@ -215,15 +144,8 @@
       "endDate": "2025-07-01",
       "description": "A distributed server where users can connect and transmit messages to other users",
       "highlights": ["Distributed Systems in Rust"],
-      "url": "https://github.com/viboognesh/axum_full_course"
-    },
-    {
-      "name": "Rust minigrep",
-      "startDate": "2025-07-01",
-      "endDate": "2025-07-15",
-      "description": "A grep like tool to return lines in a file that contains the given text",
-      "highlights": ["grep"],
-      "url": "https://github.com/viboognesh/minigrep"
+      "url": "https://github.com/viboognesh/rust-client-server-app",
+      "skills":["TCP"]
     },
     {
       "name": "Axum RBAC Workspace System",
@@ -235,7 +157,8 @@
         "Features secure user authentication, workspace management, and Role-Based Access Control (RBAC).",
         "Includes database migrations, email notifications, and a modular architecture."
       ],
-      "url": "https://github.com/viboognesh/axum_workspace_kit"
+      "url": "https://github.com/viboognesh/axum_workspace_kit",
+      "skills": ["Axum", "Postgresql", "sqlx"]
     },
     {
       "name": "LangGraph Agent for Candidate Information Extraction",

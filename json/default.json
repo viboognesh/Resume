@@ -1,0 +1,176 @@
+{
+  "basics": {
+    "name": "G Vibu Vignesh",
+    "label": "AI Engineer",
+    "image": "",
+    "email": "gviboognesh99@gmail.com",
+    "phone": "9123503384",
+    "url": "https://registry.jsonresume.org/viboognesh",
+    "summary": "An accomplished AI Engineer with a strong background in developing high-performance AI inference servers using Python FastAPI and Robyn framework. Proficient in leveraging and integrating cutting-edge AI technologies, including OpenAI, Anthropic, and Hugging Face models, with expertise in fine-tuning Hugging Face models and deploying open-source LLMs via vLLM. Experienced in building robust LLM agents with LangGraph and N8N for automation, and skilled in utilizing Rust's Candle and Candle-vLLM libraries for efficient LLM inference.",
+    "location": {
+      "address": "43/1, Street no. 7, Sri Senthur Happy Homes, Kovai Road, Annur",
+      "postalCode": "641653",
+      "city": "Coimbatore",
+      "countryCode": "IN",
+      "region": "Tamil Nadu"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "viboognesh",
+        "url": "https://github.com/viboognesh"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "G Vibu Vignesh",
+        "url": "https://www.linkedin.com/in/g-vibu-vignesh-94480a22b/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "DoaZ (Remote)",
+      "position": "GenAI Developer",
+      "startDate": "2024-04",
+      "summary": "Developed and deployed a Retrieval-Augmented Generation (RAG) chatbot to provide rapid answers from complex Korean Construction Rules & Regulation documents.",
+      "highlights": [
+        "Improved information retrieval accuracy from 60% to 80% by implementing Contextual Chunking for document preprocessing.",
+        "Utilized DSPy for advanced prompt optimization, enhancing chatbot response quality and relevance.",
+        "Deployed open-source LLMs (Qwen 148 & 32B) on Vastai GPU servers using VLLM for efficient inference.",
+        "Built and maintained FastAPI endpoints for seamless interaction between the AI backend and the frontend application.",
+        "Deployed LLMs using candle-rust library for faster LLM inference using Rust Programming Language"
+      ],
+      "skills": ["Python", "RAG Applications", "LLM Agents", "Rust"]
+    },
+    {
+      "name": "Upwork (Remote)",
+      "position": "RAG Application Developer",
+      "startDate": "2023-11",
+      "endDate": "2024-04",
+      "summary": "",
+      "highlights": [
+        "Engineered a PDF chatbot featuring a unique user-driven document selection architecture prior to Q&A.",
+        "Developed a CSV-based chatbot leveraging Langchain's Pandas agent framework for data interaction and analysis.",
+        "Created a web-search-enabled chatbot integrating DuckDuckGo to answer queries with real-time information.",
+        "Enhanced overall chatbot functionality using Python and various OpenAI models."
+      ],
+      "skills": ["Python", "RAG Applications"]
+    },
+    {
+      "name": "Gilbert Research Institute (Coimbatore)",
+      "position": "Data Scientist Intern",
+      "startDate": "2023-08",
+      "endDate": "2023-11",
+      "summary": "",
+      "highlights": [
+        "Developed a medical image analysis solution for Lung and Liver Tumor segmentation.",
+        "Utilized PyTorch and Convolutional Neural Networks (CNNs) to build and train the segmentation models.",
+        "Communicated effectively with faculty and staff, incorporating feedback for improvement.",
+        "Collaborated within teams to analyze problems and develop data-driven solutions."
+      ],
+      "skills": ["Python", "Deep Learning"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "gpt-researcher",
+      "position": "OpenSource Contributor",
+      "url": "https://github.com/assafelovic/gpt-researcher/pull/1461",
+      "startDate": "2025-07-10",
+      "endDate": "2025-07-15",
+      "summary": "Bug Fix Contribution in gpt-reasearcher project",
+      "highlights": [],
+      "skills": ["Python", "LLM Agents"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Indian Institute Of Technology Madras",
+      "area": "Physics",
+      "studyType": "Integrated B.Sc. & M.Sc.",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Tamil",
+      "fluency": "Native"
+    },
+    {
+      "language": "Hindi",
+      "fluency": "Beginner"
+    }
+  ],
+  "interests": [],
+  "references": [],
+  "projects": [
+    {
+      "name": "Async Rust Port Scanner",
+      "startDate": "2025-09-01",
+      "endDate": "2025-09-02",
+      "description": "A simple and fast multithreaded port scanner written in Rust, leveraging Tokio for asynchronous operations and Clap for command-line argument parsing. It efficiently scans a range of TCP ports on a target IP address.",
+      "highlights": [
+        "Built with Rust, ensuring high performance and memory safety.",
+        "Uses Tokio's asynchronous runtime to perform concurrent connection attempts, drastically reducing scan time.",
+        "Features a configurable command-line interface with clap for specifying target IP and custom port ranges.",
+        "Incorporates a timeout mechanism to prevent the program from hanging on unresponsive ports."
+      ],
+      "url": "https://github.com/viboognesh/async-rust-port-scanner",
+      "skills": ["Rust", "CLI Tools"]
+    },
+    {
+      "name": "Rust Zero-Knowledge Proof Authentication System",
+      "description": "A secure client-server authentication system that utilizes Zero-Knowledge Proofs (ZKP) to allow users to authenticate without ever revealing their passwords. The system is built with Rust and uses gRPC for efficient and robust communication.",
+      "highlights": [
+        "Implements Zero-Knowledge Proofs for a secure, privacy-preserving authentication process.",
+        "Uses gRPC with Protocol Buffers for defining service contracts and enabling high-performance, language-agnostic communication.",
+        "Written in Rust, guaranteeing memory safety, concurrency, and high performance.",
+        "Eliminates the risk of password interception by never transmitting the actual password over the network."
+      ],
+      "url": "https://github.com/viboognesh/rust-zkp-server",
+      "skills": ["Rust", "gRPC", "Zero-Knowledge Proofs", "Docker"]
+    },
+    {
+      "name": "Rust Distributed Chat Server",
+      "startDate": "2025-06-01",
+      "endDate": "2025-07-01",
+      "description": "A distributed server where users can connect and transmit messages to other users",
+      "highlights": ["Distributed Systems in Rust"],
+      "url": "https://github.com/viboognesh/rust-client-server-app",
+      "skills":["TCP"]
+    },
+    {
+      "name": "Axum RBAC Workspace System",
+      "startDate": "2025-07-01",
+      "endDate": "2025-08-01",
+      "description": "An open-source backend starter kit for building multi-tenant, workspace-oriented applications using Rust and the Axum framework.",
+      "highlights": [
+        "Built with Rust and Axum for high performance and safety.",
+        "Features secure user authentication, workspace management, and Role-Based Access Control (RBAC).",
+        "Includes database migrations, email notifications, and a modular architecture."
+      ],
+      "url": "https://github.com/viboognesh/axum_workspace_kit",
+      "skills": ["Axum", "Postgresql", "sqlx"]
+    },
+    {
+      "name": "LangGraph Agent for Candidate Information Extraction",
+      "startDate": "2025-07-01",
+      "endDate": "2025-08-01",
+      "description": "A LangGraph-based conversational agent that interacts with users to extract essential candidate information like contact details, job title, and salary expectations.",
+      "highlights": [
+        "Uses a stateful graph to guide the conversation and ensure all required data is collected.",
+        "Extracts structured data (JSON) from unstructured, natural language user inputs.",
+        "Built with Python, LangGraph, and the OpenAI API."
+      ],
+      "url": "https://github.com/viboognesh/langgraph-interviewer"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,59 +15,108 @@
             padding: 20px;
             background-color: #f4f4f4;
             border: 1px solid #ddd;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         @page {
-  size: A4;
-  margin: 1cm; /* Optional: Sets a small margin for printing */
-}
-        h1, h2, h3 {
+            size: A4;
+            margin: 1cm;
+            /* Optional: Sets a small margin for printing */
+        }
+
+        h1,
+        h2,
+        h3 {
             color: #1a1a1a;
             border-bottom: 2px solid #ccc;
             padding-bottom: 5px;
             margin-top: 20px;
         }
+
         h1 {
             border-bottom: 3px solid #333;
             padding-bottom: 10px;
             text-align: center;
         }
+
         .header-info {
             text-align: center;
             margin-bottom: 20px;
         }
+
         .header-info p {
             margin: 0;
             padding: 0;
         }
+
         .header-info a {
             color: #007BFF;
             text-decoration: none;
         }
+
         .header-info a:hover {
             text-decoration: underline;
         }
+
+        .download-button {
+            display: block;
+            /* Makes the button a block-level element */
+            width: 250px;
+            /* Give it a specific width */
+            margin: 20px auto;
+            /* Centers the block horizontally */
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border: none;
+            text-align: center;
+            /* Ensures the text inside the button is centered */
+        }
+
+        /* Hover and Active states */
+        .download-button:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+
+        .download-button:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
         .section {
             margin-bottom: 20px;
         }
-        .job-title, .project-title, .education-details {
+
+        .job-title,
+        .project-title,
+        .education-details {
             font-weight: bold;
             font-size: 1.1em;
             margin-bottom: 5px;
         }
-        .company-name, .project-dates {
+
+        .company-name,
+        .project-dates {
             font-style: italic;
             color: #555;
             margin-bottom: 5px;
         }
+
         ul {
             padding-left: 20px;
             margin-top: 0;
         }
+
         ul.skills-list {
             list-style-type: none;
             padding: 0;
         }
+
         ul.skills-list li {
             display: inline-block;
             background-color: #e9e9e9;
@@ -74,15 +124,19 @@
             border-radius: 5px;
             margin: 0 5px 5px 0;
         }
+
         .skill-category {
             font-weight: bold;
             margin-top: 10px;
         }
-        .summary, .about {
+
+        .summary,
+        .about {
             text-align: justify;
         }
     </style>
 </head>
+
 <body>
 
     <div class="header-info">
@@ -94,11 +148,11 @@
             {{ basics.phone }} |
             <!-- <a href="{{ basics.url }}" target="_blank">Portfolio</a> | -->
             {% for profile in basics.profiles %}
-                <a href="{{ profile.url }}" target="_blank">{{ profile.network }}</a>{% if not loop.last %} | {% endif %}
+            <a href="{{ profile.url }}" target="_blank">{{ profile.network }}</a>{% if not loop.last %} | {% endif %}
             {% endfor %}
         </p>
     </div>
-
+    <a href="resume.pdf" download="G_Vibu_Vignesh_Resume.pdf" class="download-button">Download PDF Resume</a>
     <div class="section">
         <h2>Summary</h2>
         <p class="summary">{{ basics.summary }}</p>
@@ -107,75 +161,84 @@
     <div class="section">
         <h2>Experience</h2>
         {% for job in work %}
-            <div>
-                <div class="job-title">{{ job.position }}</div>
-                <div class="company-name">{{ job.name }} | {{ job.startDate }} - {% if job.endDate %}{{ job.endDate }}{% else %}Present{% endif %}</div>
-                {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
-                {% if job.highlights %}
-                    <ul>
-                        {% for highlight in job.highlights %}
-                            <li>{{ highlight }}</li>
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-                <p class="skill-category"><strong>Skills</strong></p>
-                <ul class="skills-list">
-                {% for keyword in job.skills %}
-                    <li>{{ keyword }}</li>
+        <div>
+            <div class="job-title">{{ job.position }}</div>
+            <div class="company-name">{{ job.name }} | {{ job.startDate }} - {% if job.endDate %}{{ job.endDate }}{%
+                else %}Present{% endif %}</div>
+            {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
+            {% if job.highlights %}
+            <ul>
+                {% for highlight in job.highlights %}
+                <li>{{ highlight }}</li>
                 {% endfor %}
             </ul>
-            </div>
+            {% endif %}
+            {% if job.skills %}
+            <p class="skill-category"><strong>Skills</strong></p>
+            <ul class="skills-list">
+                {% for keyword in job.skills %}
+                <li>{{ keyword }}</li>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </div>
         {% endfor %}
     </div>
 
     <div class="section">
         <h2>Projects</h2>
         {% for project in projects %}
-            <div>
-                <div class="project-title"> <a href="{{ project.url }}">{{ project.name }}</a></div>
-                <div class="project-dates">{{ project.startDate }} - {{ project.endDate }}</div>
-                <p>{{ project.description }} </p>
-                {% if project.highlights %}
-                    <ul>
-                        {% for highlight in project.highlights %}
-                            <li>{{ highlight }}</li>
-                        {% endfor %}
-                    </ul>
+        <div>
+            <div class="project-title"> <a href="{{ project.url }}">{{ project.name }}</a></div>
+            <p>{{ project.description }} </p>
+            {% if project.highlights %}
+            <ul>
+                {% for highlight in project.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% if project.skills %}
+            <p class="skill-category"><strong>Skills</strong></p>
+            <ul class="skills-list">
+                {% for keyword in project.skills %}
+                <li>{{ keyword }}</li>
+                {% endfor %}
                 {% endif %}
-            </div>
+        </div>
         {% endfor %}
     </div>
 
     <div class="section">
         <h2>Skills</h2>
-        {% for skill_group in skills %}
-            <p class="skill-category"><strong>{{ skill_group.name }}</strong>: {{ skill_group.level }}</p>
-            <ul class="skills-list">
-                {% for keyword in skill_group.keywords %}
-                    <li>{{ keyword }}</li>
-                {% endfor %}
-            </ul>
-        {% endfor %}
+        <ul class="skills-list">
+            {% for skill_group in skills %}
+            <li>{{ skill_group }}</li>
+            {% endfor %}
+        </ul>
     </div>
 
     <div class="section">
         <h2>Education</h2>
         {% for edu in education %}
-            <div>
-                <div class="education-details">{{ edu.studyType }}, {{ edu.area }}</div>
-                <div class="company-name">{{ edu.institution }} | Graduated: {{ edu.endDate }}</div>
-            </div>
+        <div>
+            <div class="education-details">{{ edu.studyType }}, {{ edu.area }}</div>
+            <div class="company-name">{{ edu.institution }} {% if edu.endDate %} | Graduated: {{ edu.endDate }} {% endif
+                %}</div>
+
+        </div>
         {% endfor %}
     </div>
 
     <div class="section">
         <h2>Languages</h2>
-        <ul>
+        <ul class="skills-list">
             {% for lang in languages %}
-                <li>{{ lang.language }} ({{ lang.fluency }})</li>
+            <li>{{ lang.language }}</li>
             {% endfor %}
         </ul>
     </div>
 
 </body>
+
 </html>
