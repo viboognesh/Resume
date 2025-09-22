@@ -11,7 +11,6 @@ HTML_TEMPLATE_FILE_PATH="template/resume_template.html"
 TYP_TEMPLATE_FILE_PATH="template/resume_template.typ"
 JSON_FOLDER_PATH="json"
 HTML_FOLDER_PATH="docs"
-PDF_FOLDER_PATH="pdfs"
 
 def create_html_pdf_paths_from_json():
     json_files = glob.glob(f"{JSON_FOLDER_PATH}/*.json")
@@ -77,6 +76,7 @@ def main():
         shutil.rmtree(HTML_FOLDER_PATH)
     file_paths = create_html_pdf_paths_from_json()
     for json_file_path, (html_path, pdf_path) in file_paths.items():
+        print(pdf_path,html_path)
         pdf_path.parent.mkdir(parents=True, exist_ok=True)
         try:
             create_resume_pdf(json_file_path,pdf_path)

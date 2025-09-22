@@ -6,7 +6,7 @@
     "email": "gviboognesh99@gmail.com",
     "phone": "9123503384",
     "url": "https://registry.jsonresume.org/viboognesh",
-    "summary": "An accomplished AI Engineer with a strong background in developing high-performance AI inference servers using Python FastAPI and Robyn framework. Proficient in leveraging and integrating cutting-edge AI technologies, including OpenAI, Anthropic, and Hugging Face models, with expertise in fine-tuning Hugging Face models and deploying open-source LLMs via vLLM. Experienced in building robust LLM agents with LangGraph and N8N for automation, and skilled in utilizing Rust's Candle and Candle-vLLM libraries for efficient LLM inference.",
+    "summary": "Rust Developer with hands-on experience building system tools, CLI applications, and backend services with a strong focus on performance, concurrency, and low-level systems programming. Proficient in developing and deploying containerized applications using Docker and Kubernetes, and experienced working in Linux environments with a solid understanding of process management, networking, and memory usage.\n\nBuilt multiple open-source Rust projects including a real-time Docker container monitor (TUI) and an asynchronous TCP port scanner, both leveraging async runtimes and low-level system interfaces. Passionate about embedded systems and IoT, with prior experience building Arduino-based projects as part of a college electronics club. Strong background in deploying full-stack applications using Rust and Python, with a working knowledge of modern DevOps workflows.",
     "location": {
       "address": "43/1, Street no. 7, Sri Senthur Happy Homes, Kovai Road, Annur",
       "postalCode": "641653",
