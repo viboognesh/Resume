@@ -113,6 +113,17 @@
   "references": [],
   "projects": [
     {
+      "name": "Docker Container Monitor",
+      "description": "A terminal-based Docker container monitor built in Rust. It provides a live, interactive TUI showing real-time CPU and memory usage for all running Docker containers. Powered by Bollard for Docker interaction and Ratatui for terminal rendering.",
+      "highlights": [
+        "Built with Rust for safety, performance, and concurrency.",
+        "Uses Bollard to stream live Docker stats asynchronously for each container.",
+        "Displays a dynamic and user-friendly terminal interface with real-time updates."
+      ],
+      "url": "https://github.com/viboognesh/docker-container-monitor",
+      "skills": ["Rust", "Docker", "TUI"]
+    },
+    {
       "name": "Async Rust Port Scanner",
       "startDate": "2025-09-01",
       "endDate": "2025-09-02",
@@ -145,7 +156,7 @@
       "description": "A distributed server where users can connect and transmit messages to other users",
       "highlights": ["Distributed Systems in Rust"],
       "url": "https://github.com/viboognesh/rust-client-server-app",
-      "skills":["TCP"]
+      "skills": ["TCP"]
     },
     {
       "name": "Axum RBAC Workspace System",
