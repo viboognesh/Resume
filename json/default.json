@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "G Vibu Vignesh",
-    "label": "AI Engineer",
+    "label": "Senior Rust Engineer",
     "image": "",
     "email": "gviboognesh99@gmail.com",
     "phone": "9123503384",
     "url": "https://registry.jsonresume.org/viboognesh",
-    "summary": "An accomplished AI Engineer with a strong background in developing high-performance AI inference servers using Python FastAPI and Robyn framework. Proficient in leveraging and integrating cutting-edge AI technologies, including OpenAI, Anthropic, and Hugging Face models, with expertise in fine-tuning Hugging Face models and deploying open-source LLMs via vLLM. Experienced in building robust LLM agents with LangGraph and N8N for automation, and skilled in utilizing Rust's Candle and Candle-vLLM libraries for efficient LLM inference.",
+    "summary": "Rust Developer with hands-on experience building system tools, CLI applications, and backend services with a strong focus on performance, concurrency, and low-level systems programming. Proficient in developing and deploying containerized applications using Docker and Kubernetes, and experienced working in Linux environments with a solid understanding of process management, networking, and memory usage.\n\nBuilt multiple open-source Rust projects including a real-time Docker container monitor (TUI) and an asynchronous TCP port scanner, both leveraging async runtimes and low-level system interfaces. Passionate about embedded systems and IoT, with prior experience building Arduino-based projects as part of a college electronics club. Strong background in deploying full-stack applications using Rust and Python, with a working knowledge of modern DevOps workflows.",
     "location": {
       "address": "43/1, Street no. 7, Sri Senthur Happy Homes, Kovai Road, Annur",
       "postalCode": "641653",
@@ -29,9 +29,28 @@
   },
   "work": [
     {
+      "name": "Tinkerblox Inc",
+      "position": "Senior Rust Developer",
+      "startDate": "2025-10",
+      "summary": "Developed oci low level container runtime to deploy applications in linux namespaces rust",
+      "highlights": [
+        "Developed a high-performance, OCI-compliant container runtime in Rust, achieving faster container startup and execution times than the industry-standard runc.",
+        "Leveraged Rust’s memory safety and zero-cost abstractions to implement low-level Linux primitives (clone, pivot_root, unshare) without the overhead of a garbage collector.",
+        "Implemented strict resource isolation using Linux Namespaces and Cgroups v2, ensuring secure and predictable process environments.",
+        "Optimized system call efficiency by utilizing nix and libc crates to interface directly with the Linux kernel, reducing latency in the container lifecycle.",
+        "Ensured OCI specification parity, allowing the runtime to function as a drop-in replacement for existing container engines like runc"
+      ],
+      "skills": [
+        "Linux Kernel Interactions",
+        "Rust",
+        "OCI Containerisation"
+      ]
+    },
+    {
       "name": "DoaZ (Remote)",
       "position": "GenAI Developer",
       "startDate": "2024-04",
+      "endDate": "2025-10",
       "summary": "Developed and deployed a Retrieval-Augmented Generation (RAG) chatbot to provide rapid answers from complex Korean Construction Rules & Regulation documents.",
       "highlights": [
         "Improved information retrieval accuracy from 60% to 80% by implementing Contextual Chunking for document preprocessing.",
@@ -41,7 +60,13 @@
         "Deployed LLMs using candle-rust library for faster LLM inference using Rust Programming Language",
         "Deployed web-applications using Docker to AWS"
       ],
-      "skills": ["Python", "RAG Applications", "LLM Agents", "Rust", "Docker"]
+      "skills": [
+        "Python",
+        "RAG Applications",
+        "LLM Agents",
+        "Rust",
+        "Docker"
+      ]
     },
     {
       "name": "Upwork (Remote)",
@@ -55,7 +80,10 @@
         "Created a web-search-enabled chatbot integrating DuckDuckGo to answer queries with real-time information.",
         "Enhanced overall chatbot functionality using Python and various OpenAI models."
       ],
-      "skills": ["Python", "RAG Applications"]
+      "skills": [
+        "Python",
+        "RAG Applications"
+      ]
     },
     {
       "name": "Gilbert Research Institute (Coimbatore)",
@@ -69,7 +97,10 @@
         "Communicated effectively with faculty and staff, incorporating feedback for improvement.",
         "Collaborated within teams to analyze problems and develop data-driven solutions."
       ],
-      "skills": ["Python", "Deep Learning"]
+      "skills": [
+        "Python",
+        "Deep Learning"
+      ]
     }
   ],
   "volunteer": [
@@ -81,7 +112,10 @@
       "endDate": "2025-07-15",
       "summary": "Bug Fix Contribution in gpt-reasearcher project",
       "highlights": [],
-      "skills": ["Python", "LLM Agents"]
+      "skills": [
+        "Python",
+        "LLM Agents"
+      ]
     }
   ],
   "education": [
@@ -122,7 +156,11 @@
         "Displays a dynamic and user-friendly terminal interface with real-time updates."
       ],
       "url": "https://github.com/viboognesh/docker-container-monitor",
-      "skills": ["Rust", "Docker", "TUI"]
+      "skills": [
+        "Rust",
+        "Docker",
+        "TUI"
+      ]
     },
     {
       "name": "Async Rust Port Scanner",
@@ -136,7 +174,10 @@
         "Incorporates a timeout mechanism to prevent the program from hanging on unresponsive ports."
       ],
       "url": "https://github.com/viboognesh/async-rust-port-scanner",
-      "skills": ["Rust", "CLI Tools"]
+      "skills": [
+        "Rust",
+        "CLI Tools"
+      ]
     },
     {
       "name": "Rust Zero-Knowledge Proof Authentication System",
@@ -148,16 +189,25 @@
         "Eliminates the risk of password interception by never transmitting the actual password over the network."
       ],
       "url": "https://github.com/viboognesh/rust-zkp-server",
-      "skills": ["Rust", "gRPC", "Zero-Knowledge Proofs", "Docker"]
+      "skills": [
+        "Rust",
+        "gRPC",
+        "Zero-Knowledge Proofs",
+        "Docker"
+      ]
     },
     {
       "name": "Rust Distributed Chat Server",
       "startDate": "2025-06-01",
       "endDate": "2025-07-01",
       "description": "A distributed server where users can connect and transmit messages to other users",
-      "highlights": ["Distributed Systems in Rust"],
+      "highlights": [
+        "Distributed Systems in Rust"
+      ],
       "url": "https://github.com/viboognesh/rust-client-server-app",
-      "skills": ["TCP"]
+      "skills": [
+        "TCP"
+      ]
     },
     {
       "name": "Axum RBAC Workspace System",
@@ -170,7 +220,11 @@
         "Includes database migrations, email notifications, and a modular architecture."
       ],
       "url": "https://github.com/viboognesh/axum_workspace_kit",
-      "skills": ["Axum", "Postgresql", "sqlx"]
+      "skills": [
+        "Axum",
+        "Postgresql",
+        "sqlx"
+      ]
     },
     {
       "name": "LangGraph Agent for Candidate Information Extraction",
