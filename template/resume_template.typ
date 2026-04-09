@@ -1,4 +1,5 @@
 #let resume-data = json("{{ json_file_path }}")
+// #let resume-data = json("../json/default.json")
 
 #show: doc => {
   set text( size: 11pt, fill: black) // A good, professional font
@@ -95,6 +96,9 @@
 #for work_experience in resume-data.work{
   [#subheading[#work_experience.position]]
   [#subtext[#work_experience.name | #work_experience.startDate - #work_experience.at("endDate",default:"Present")]]
+  if work_experience.summary != "" {
+  [#par(justify: true)[#work_experience.summary]]
+  }
   for value in work_experience.highlights {
     [- #value]
   }
@@ -106,24 +110,39 @@
 }
 
 // --- Projects Section ---
-#section-heading[Projects]
-#for project in resume-data.projects{
-  link(project.url)[#subheading[#project.name]]
-  [#par(justify: true)[#project.description]]
-  for value in project.highlights{
-    [- #value]
-  }
-  if project.at("skills",default:()) != (){
-    [#skills_heading[Skills]]
-    [#format-tabs(project.skills)]
-  }
+#if resume-data.projects.len() > 0 {
+  [#section-heading[Projects]]
+  [#for project in resume-data.projects{
+    link(project.url)[#subheading[#project.name]]
+    [#par(justify: true)[#project.description]]
+    for value in project.highlights{
+      [- #value]
+    }
+    if project.at("skills",default:()) != (){
+      [#skills_heading[Skills]]
+      [#format-tabs(project.skills)]
+    }
+  }]
 }
 
 // Open Source Contributions
 #section-heading[Open Source Contributions]
-#for project in resume-data.volunteer{
-  link(project.url)[#subheading[#project.organization]]
-  [#par(justify: true)[#project.summary]]
+#for project in resume-data.opensource{
+  // link(project.projectUrl)[#subheading[#project.organization]]
+  // link(project.prUrl)[#subheading[PR link]]
+  grid(
+      columns: (1fr, auto),
+      link(project.projectUrl)[#subheading[#project.organization]],
+      link(project.prUrl)[#subheading[View Pull Request →]]
+    )
+// // Organization on its own line
+//     link(project.projectUrl)[#subheading[#project.organization]]
+    
+//     // PR Link on the very next line
+//     // We use text() to make it look like a sub-metadata field
+//     link(project.prUrl)[#text(size: 0.9em, style: "italic", fill: blue)[View Pull Request →]]
+
+  [#par(justify: true)[#project.description]]
   for value in project.highlights{
     [- #value]
   }
@@ -146,7 +165,7 @@
     unique_list.push(value)
   }
 }
-#for value in resume-data.volunteer.map(elem => elem.at("skills",default:())).flatten(){
+#for value in resume-data.opensource.map(elem => elem.at("skills",default:())).flatten(){
   if unique_list.contains(value) == false {
     unique_list.push(value)
   }

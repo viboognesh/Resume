@@ -146,7 +146,7 @@
         <p>
             <a href="mailto:gviboognesh99@gmail.com">gviboognesh99@gmail.com</a> |
             9123503384 |
-            <!-- <a href="https://registry.jsonresume.org/viboognesh" target="_blank">Portfolio</a> | -->
+            <!-- <a href="https://viboognesh.github.io/Resume/default/resume.html" target="_blank">Portfolio</a> | -->
             
             <a href="https://github.com/viboognesh" target="_blank">GitHub</a> | 
             
@@ -157,9 +157,7 @@
     <a href="resume.pdf" download="G_Vibu_Vignesh_Resume.pdf" class="download-button">Download PDF Resume</a>
     <div class="section">
         <h2>Summary</h2>
-        <p class="summary">Rust Developer with hands-on experience building system tools, CLI applications, and backend services with a strong focus on performance, concurrency, and low-level systems programming. Proficient in developing and deploying containerized applications using Docker and Kubernetes, and experienced working in Linux environments with a solid understanding of process management, networking, and memory usage.
-
-Built multiple open-source Rust projects including a real-time Docker container monitor (TUI) and an asynchronous TCP port scanner, both leveraging async runtimes and low-level system interfaces. Passionate about embedded systems and IoT, with prior experience building Arduino-based projects as part of a college electronics club. Strong background in deploying full-stack applications using Rust and Python, with a working knowledge of modern DevOps workflows.</p>
+        <p class="summary">Rust Developer with hands-on experience building system tools, CLI applications, and backend services with a strong focus on performance, concurrency, and low-level systems programming. Proficient in developing and deploying containerized applications using Docker and Kubernetes, and experienced working in Linux environments with a solid understanding of process management, networking, and memory usage.</p>
     </div>
 
     <div class="section">
@@ -168,17 +166,13 @@ Built multiple open-source Rust projects including a real-time Docker container 
         <div>
             <div class="job-title">Senior Rust Developer</div>
             <div class="company-name">Tinkerblox Inc | 2025-10 - Present</div>
-            <p>Developed oci low level container runtime to deploy applications in linux namespaces rust</p>
+            <p>Developed oci compliant low level container runtime to deploy applications in linux namespaces in rust</p>
             
             <ul>
                 
-                <li>Developed a high-performance, OCI-compliant container runtime in Rust, achieving faster container startup and execution times than the industry-standard runc.</li>
+                <li>Used rustix crate to build oci compliant low level container runtime that is faster than existing open source runtime youki</li>
                 
-                <li>Leveraged Rust’s memory safety and zero-cost abstractions to implement low-level Linux primitives (clone, pivot_root, unshare) without the overhead of a garbage collector.</li>
-                
-                <li>Implemented strict resource isolation using Linux Namespaces and Cgroups v2, ensuring secure and predictable process environments.</li>
-                
-                <li>Optimized system call efficiency by utilizing nix and libc crates to interface directly with the Linux kernel, reducing latency in the container lifecycle.</li>
+                <li>Optimized system call efficiency by utilizing rustix crate to interface directly with the Linux kernel, reducing latency in the container lifecycle.</li>
                 
                 <li>Ensured OCI specification parity, allowing the runtime to function as a drop-in replacement for existing container engines like runc</li>
                 
@@ -240,7 +234,7 @@ Built multiple open-source Rust projects including a real-time Docker container 
         <div>
             <div class="job-title">RAG Application Developer</div>
             <div class="company-name">Upwork (Remote) | 2023-11 - 2024-04</div>
-            
+            <p>Built a rag chatbot that searched through pdf files and csv files to answer user questions</p>
             
             <ul>
                 
@@ -269,7 +263,7 @@ Built multiple open-source Rust projects including a real-time Docker container 
         <div>
             <div class="job-title">Data Scientist Intern</div>
             <div class="company-name">Gilbert Research Institute (Coimbatore) | 2023-08 - 2023-11</div>
-            
+            <p>Learnt ML concepts and built Lung and Liver Tumor Detection ML models</p>
             
             <ul>
                 
@@ -296,195 +290,69 @@ Built multiple open-source Rust projects including a real-time Docker container 
         </div>
         
     </div>
+    
+    
 
+    
     <div class="section">
-        <h2>Projects</h2>
+        <h2>Open Source Contributions</h2>
         
         <div>
-            <div class="project-title"> <a href="https://github.com/viboognesh/docker-container-monitor">Docker Container Monitor</a></div>
-            <p>A terminal-based Docker container monitor built in Rust. It provides a live, interactive TUI showing real-time CPU and memory usage for all running Docker containers. Powered by Bollard for Docker interaction and Ratatui for terminal rendering. </p>
+            <!-- <div class="opensource-project-title"> <a href=""></a></div> -->
+            <!-- <div style="display: flex; justify-content: space-between; align-items: baseline;">
+                <div class="opensource-project-title">
+                    <a href="https://github.com/assafelovic/gpt-researcher" style="font-weight: bold; font-size: 1.1em;">gpt-researcher</a>
+                </div>
+                <div>
+                    <a href="https://github.com/assafelovic/gpt-researcher/pull/1461" target="_blank" style="font-size: 0.9em; color: #007bff;">PR Link</a>
+                </div>
+            </div> -->
+            <div class="opensource-project-title">
+                <a href="https://github.com/assafelovic/gpt-researcher" style="font-weight: bold; font-size: 1.1em; text-decoration: none; color: #007bff;">
+                    gpt-researcher
+                </a>
+            </div>
             
-            <ul>
-                
-                <li>Built with Rust for safety, performance, and concurrency.</li>
-                
-                <li>Uses Bollard to stream live Docker stats asynchronously for each container.</li>
-                
-                <li>Displays a dynamic and user-friendly terminal interface with real-time updates.</li>
-                
-            </ul>
+            <div style="margin-top: 2px;">
+                <a href="https://github.com/assafelovic/gpt-researcher/pull/1461" target="_blank" style="font-size: 0.9em; color: #007bff; font-style: italic;">
+                    View Pull Request &rarr;
+                </a>
+            </div>
+            <p>Contributed a fix to GPT-Researcher's RAG pipeline, enabling functional metadata filtering by correcting parameter propagation between the research agent and vector store wrappers </p>
             
             
             <p class="skill-category"><strong>Skills</strong></p>
             <ul class="skills-list">
                 
-                <li>Rust</li>
+                <li>Python</li>
                 
-                <li>Docker</li>
-                
-                <li>TUI</li>
+                <li>LLM Agents</li>
                 
                 
-        </div>
-        
-        <div>
-            <div class="project-title"> <a href="https://github.com/viboognesh/async-rust-port-scanner">Async Rust Port Scanner</a></div>
-            <p>A simple and fast multithreaded port scanner written in Rust, leveraging Tokio for asynchronous operations and Clap for command-line argument parsing. It efficiently scans a range of TCP ports on a target IP address. </p>
-            
-            <ul>
-                
-                <li>Built with Rust, ensuring high performance and memory safety.</li>
-                
-                <li>Uses Tokio's asynchronous runtime to perform concurrent connection attempts, drastically reducing scan time.</li>
-                
-                <li>Features a configurable command-line interface with clap for specifying target IP and custom port ranges.</li>
-                
-                <li>Incorporates a timeout mechanism to prevent the program from hanging on unresponsive ports.</li>
-                
-            </ul>
-            
-            
-            <p class="skill-category"><strong>Skills</strong></p>
-            <ul class="skills-list">
-                
-                <li>Rust</li>
-                
-                <li>CLI Tools</li>
-                
-                
-        </div>
-        
-        <div>
-            <div class="project-title"> <a href="https://github.com/viboognesh/rust-zkp-server">Rust Zero-Knowledge Proof Authentication System</a></div>
-            <p>A secure client-server authentication system that utilizes Zero-Knowledge Proofs (ZKP) to allow users to authenticate without ever revealing their passwords. The system is built with Rust and uses gRPC for efficient and robust communication. </p>
-            
-            <ul>
-                
-                <li>Implements Zero-Knowledge Proofs for a secure, privacy-preserving authentication process.</li>
-                
-                <li>Uses gRPC with Protocol Buffers for defining service contracts and enabling high-performance, language-agnostic communication.</li>
-                
-                <li>Written in Rust, guaranteeing memory safety, concurrency, and high performance.</li>
-                
-                <li>Eliminates the risk of password interception by never transmitting the actual password over the network.</li>
-                
-            </ul>
-            
-            
-            <p class="skill-category"><strong>Skills</strong></p>
-            <ul class="skills-list">
-                
-                <li>Rust</li>
-                
-                <li>gRPC</li>
-                
-                <li>Zero-Knowledge Proofs</li>
-                
-                <li>Docker</li>
-                
-                
-        </div>
-        
-        <div>
-            <div class="project-title"> <a href="https://github.com/viboognesh/rust-client-server-app">Rust Distributed Chat Server</a></div>
-            <p>A distributed server where users can connect and transmit messages to other users </p>
-            
-            <ul>
-                
-                <li>Distributed Systems in Rust</li>
-                
-            </ul>
-            
-            
-            <p class="skill-category"><strong>Skills</strong></p>
-            <ul class="skills-list">
-                
-                <li>TCP</li>
-                
-                
-        </div>
-        
-        <div>
-            <div class="project-title"> <a href="https://github.com/viboognesh/axum_workspace_kit">Axum RBAC Workspace System</a></div>
-            <p>An open-source backend starter kit for building multi-tenant, workspace-oriented applications using Rust and the Axum framework. </p>
-            
-            <ul>
-                
-                <li>Built with Rust and Axum for high performance and safety.</li>
-                
-                <li>Features secure user authentication, workspace management, and Role-Based Access Control (RBAC).</li>
-                
-                <li>Includes database migrations, email notifications, and a modular architecture.</li>
-                
-            </ul>
-            
-            
-            <p class="skill-category"><strong>Skills</strong></p>
-            <ul class="skills-list">
-                
-                <li>Axum</li>
-                
-                <li>Postgresql</li>
-                
-                <li>sqlx</li>
-                
-                
-        </div>
-        
-        <div>
-            <div class="project-title"> <a href="https://github.com/viboognesh/langgraph-interviewer">LangGraph Agent for Candidate Information Extraction</a></div>
-            <p>A LangGraph-based conversational agent that interacts with users to extract essential candidate information like contact details, job title, and salary expectations. </p>
-            
-            <ul>
-                
-                <li>Uses a stateful graph to guide the conversation and ensure all required data is collected.</li>
-                
-                <li>Extracts structured data (JSON) from unstructured, natural language user inputs.</li>
-                
-                <li>Built with Python, LangGraph, and the OpenAI API.</li>
-                
-            </ul>
-            
-            
         </div>
         
     </div>
+    
 
     <div class="section">
         <h2>Skills</h2>
         <ul class="skills-list">
             
-            <li>Rust</li>
-            
-            <li>Axum</li>
-            
-            <li>RAG Applications</li>
-            
-            <li>Docker</li>
-            
             <li>Deep Learning</li>
             
             <li>Linux Kernel Interactions</li>
             
-            <li>Postgresql</li>
-            
-            <li>LLM Agents</li>
-            
-            <li>CLI Tools</li>
-            
-            <li>OCI Containerisation</li>
-            
-            <li>Zero-Knowledge Proofs</li>
-            
-            <li>TCP</li>
+            <li>RAG Applications</li>
             
             <li>Python</li>
             
-            <li>TUI</li>
+            <li>Docker</li>
             
-            <li>sqlx</li>
+            <li>Rust</li>
             
-            <li>gRPC</li>
+            <li>OCI Containerisation</li>
+            
+            <li>LLM Agents</li>
             
         </ul>
     </div>

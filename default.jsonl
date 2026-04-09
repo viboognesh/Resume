@@ -71,7 +71,7 @@
       "position": "RAG Application Developer",
       "startDate": "2023-11",
       "endDate": "2024-04",
-      "summary": "Built a rag chatbot that searched through pdf files and csv files to answer user questions",
+      "summary": "",
       "highlights": [
         "Engineered a PDF chatbot featuring a unique user-driven document selection architecture prior to Q&A.",
         "Developed a CSV-based chatbot leveraging Langchain's Pandas agent framework for data interaction and analysis.",
@@ -88,7 +88,7 @@
       "position": "Data Scientist Intern",
       "startDate": "2023-08",
       "endDate": "2023-11",
-      "summary": "Learnt ML concepts and built Lung and Liver Tumor Detection ML models",
+      "summary": "",
       "highlights": [
         "Developed a medical image analysis solution for Lung and Liver Tumor segmentation.",
         "Utilized PyTorch and Convolutional Neural Networks (CNNs) to build and train the segmentation models.",
@@ -101,14 +101,14 @@
       ]
     }
   ],
-  "opensource": [
+  "volunteer": [
     {
       "organization": "gpt-researcher",
-      "projectUrl": "https://github.com/assafelovic/gpt-researcher",
-      "prUrl": "https://github.com/assafelovic/gpt-researcher/pull/1461",
+      "position": "OpenSource Contributor",
+      "url": "https://github.com/assafelovic/gpt-researcher/pull/1461",
       "startDate": "2025-07-10",
       "endDate": "2025-07-15",
-      "description": "Contributed a fix to GPT-Researcher's RAG pipeline, enabling functional metadata filtering by correcting parameter propagation between the research agent and vector store wrappers",
+      "summary": "Bug Fix Contribution in gpt-reasearcher project",
       "highlights": [],
       "skills": [
         "Python",
@@ -144,5 +144,97 @@
   ],
   "interests": [],
   "references": [],
-  "projects": []
+  "projects": [
+    {
+      "name": "Docker Container Monitor",
+      "description": "A terminal-based Docker container monitor built in Rust. It provides a live, interactive TUI showing real-time CPU and memory usage for all running Docker containers. Powered by Bollard for Docker interaction and Ratatui for terminal rendering.",
+      "highlights": [
+        "Built with Rust for safety, performance, and concurrency.",
+        "Uses Bollard to stream live Docker stats asynchronously for each container.",
+        "Displays a dynamic and user-friendly terminal interface with real-time updates."
+      ],
+      "url": "https://github.com/viboognesh/docker-container-monitor",
+      "skills": [
+        "Rust",
+        "Docker",
+        "TUI"
+      ]
+    },
+    {
+      "name": "Async Rust Port Scanner",
+      "startDate": "2025-09-01",
+      "endDate": "2025-09-02",
+      "description": "A simple and fast multithreaded port scanner written in Rust, leveraging Tokio for asynchronous operations and Clap for command-line argument parsing. It efficiently scans a range of TCP ports on a target IP address.",
+      "highlights": [
+        "Built with Rust, ensuring high performance and memory safety.",
+        "Uses Tokio's asynchronous runtime to perform concurrent connection attempts, drastically reducing scan time.",
+        "Features a configurable command-line interface with clap for specifying target IP and custom port ranges.",
+        "Incorporates a timeout mechanism to prevent the program from hanging on unresponsive ports."
+      ],
+      "url": "https://github.com/viboognesh/async-rust-port-scanner",
+      "skills": [
+        "Rust",
+        "CLI Tools"
+      ]
+    },
+    {
+      "name": "Rust Zero-Knowledge Proof Authentication System",
+      "description": "A secure client-server authentication system that utilizes Zero-Knowledge Proofs (ZKP) to allow users to authenticate without ever revealing their passwords. The system is built with Rust and uses gRPC for efficient and robust communication.",
+      "highlights": [
+        "Implements Zero-Knowledge Proofs for a secure, privacy-preserving authentication process.",
+        "Uses gRPC with Protocol Buffers for defining service contracts and enabling high-performance, language-agnostic communication.",
+        "Written in Rust, guaranteeing memory safety, concurrency, and high performance.",
+        "Eliminates the risk of password interception by never transmitting the actual password over the network."
+      ],
+      "url": "https://github.com/viboognesh/rust-zkp-server",
+      "skills": [
+        "Rust",
+        "gRPC",
+        "Zero-Knowledge Proofs",
+        "Docker"
+      ]
+    },
+    {
+      "name": "Rust Distributed Chat Server",
+      "startDate": "2025-06-01",
+      "endDate": "2025-07-01",
+      "description": "A distributed server where users can connect and transmit messages to other users",
+      "highlights": [
+        "Distributed Systems in Rust"
+      ],
+      "url": "https://github.com/viboognesh/rust-client-server-app",
+      "skills": [
+        "TCP"
+      ]
+    },
+    {
+      "name": "Axum RBAC Workspace System",
+      "startDate": "2025-07-01",
+      "endDate": "2025-08-01",
+      "description": "An open-source backend starter kit for building multi-tenant, workspace-oriented applications using Rust and the Axum framework.",
+      "highlights": [
+        "Built with Rust and Axum for high performance and safety.",
+        "Features secure user authentication, workspace management, and Role-Based Access Control (RBAC).",
+        "Includes database migrations, email notifications, and a modular architecture."
+      ],
+      "url": "https://github.com/viboognesh/axum_workspace_kit",
+      "skills": [
+        "Axum",
+        "Postgresql",
+        "sqlx"
+      ]
+    },
+    {
+      "name": "LangGraph Agent for Candidate Information Extraction",
+      "startDate": "2025-07-01",
+      "endDate": "2025-08-01",
+      "description": "A LangGraph-based conversational agent that interacts with users to extract essential candidate information like contact details, job title, and salary expectations.",
+      "highlights": [
+        "Uses a stateful graph to guide the conversation and ensure all required data is collected.",
+        "Extracts structured data (JSON) from unstructured, natural language user inputs.",
+        "Built with Python, LangGraph, and the OpenAI API."
+      ],
+      "url": "https://github.com/viboognesh/langgraph-interviewer"
+    }
+  ]
 }

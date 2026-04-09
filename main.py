@@ -62,7 +62,6 @@ def create_resume_pdf(json_file_path, pdf_path):
 
     try:
         result = subprocess.run(['typst', 'compile', str(temp_typ_file_path), str(pdf_path)], capture_output=True, text=True, check=True)
-        print("Command Output:")
         print(result.stdout)
     except subprocess.CalledProcessError as e:
         print(f"Command failed with error: {e}")
