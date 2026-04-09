@@ -32,12 +32,10 @@
       "name": "Tinkerblox Inc",
       "position": "Senior Rust Developer",
       "startDate": "2025-10",
-      "summary": "Developed oci low level container runtime to deploy applications in linux namespaces rust",
+      "summary": "Developed oci compliant low level container runtime to deploy applications in linux namespaces in rust",
       "highlights": [
-        "Developed a high-performance, OCI-compliant container runtime in Rust, achieving faster container startup and execution times than the industry-standard runc.",
-        "Leveraged Rust’s memory safety and zero-cost abstractions to implement low-level Linux primitives (clone, pivot_root, unshare) without the overhead of a garbage collector.",
-        "Implemented strict resource isolation using Linux Namespaces and Cgroups v2, ensuring secure and predictable process environments.",
-        "Optimized system call efficiency by utilizing nix and libc crates to interface directly with the Linux kernel, reducing latency in the container lifecycle.",
+        "Used rustix crate to build oci compliant low level container runtime that is faster than existing open source runtime youki",
+        "Optimized system call efficiency by utilizing rustix crate to interface directly with the Linux kernel, reducing latency in the container lifecycle.",
         "Ensured OCI specification parity, allowing the runtime to function as a drop-in replacement for existing container engines like runc"
       ],
       "skills": [
