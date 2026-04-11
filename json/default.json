@@ -106,15 +106,30 @@
       "organization": "gpt-researcher",
       "projectUrl": "https://github.com/assafelovic/gpt-researcher",
       "prUrl": "https://github.com/assafelovic/gpt-researcher/pull/1461",
-      "startDate": "2025-07-10",
-      "endDate": "2025-07-15",
       "description": "Contributed a fix to GPT-Researcher's RAG pipeline, enabling functional metadata filtering by correcting parameter propagation between the research agent and vector store wrappers",
       "highlights": [],
       "skills": [
         "Python",
         "LLM Agents"
       ]
+    },
+    {
+      "organization": "youki",
+      "projectUrl": "https://github.com/youki-dev/youki",
+      "prUrl": "https://github.com/youki-dev/youki/pull/3404",
+      "description": "Added support for the new `SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV` flag in youki to align with OCI runtime spec v1.3 updates.",
+      "highlights": [],
+      "skills": []
+    },
+    {
+      "organization": "oci-spec-rs",
+      "projectUrl": "https://github.com/youki-dev/oci-spec-rs",
+      "prUrl": "https://github.com/youki-dev/oci-spec-rs/pull/310",
+      "description": "Added `SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV` to the seccomp configuration to support OCI Runtime Spec v1.3.0 and improve killable wait behavior in seccomp user notifications.",
+      "highlights": [],
+      "skills": []
     }
+
   ],
   "education": [
     {
