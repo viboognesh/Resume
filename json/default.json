@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "G Vibu Vignesh",
-    "label": "Senior Rust Engineer",
+    "label": "Systems Software Engineer (Rust)",
     "image": "",
     "email": "gviboognesh99@gmail.com",
     "phone": "9123503384",
@@ -30,7 +30,7 @@
   "work": [
     {
       "name": "Tinkerblox Inc",
-      "position": "Senior Rust Developer",
+      "position": "Systems Software Engineer(Rust)",
       "startDate": "2025-10",
       "summary": "Developed oci compliant low level container runtime to deploy applications in linux namespaces in rust",
       "highlights": [
@@ -129,7 +129,6 @@
       "highlights": [],
       "skills": []
     }
-
   ],
   "education": [
     {
