@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "G Vibu Vignesh",
-    "label": "Systems Software Engineer (Rust)",
+    "label": "Systems Engineer (Rust)",
     "image": "",
     "email": "gviboognesh99@gmail.com",
     "phone": "9123503384",
     "url": "https://viboognesh.github.io/Resume/default/resume.html",
-    "summary": "Rust Developer with hands-on experience building system tools, CLI applications, and backend services with a strong focus on performance, concurrency, and low-level systems programming. Proficient in developing and deploying containerized applications using Docker and Kubernetes, and experienced working in Linux environments with a solid understanding of process management, networking, and memory usage.",
+    "summary": "Systems Engineer specializing in Rust and low-level Linux kernel primitives. Experienced in building high-performance cloud-native infrastructure, including OCI-compliant container runtimes, CRI protocols, and custom process isolation layers (cgroups v2, namespaces). Combines deep systems programming expertise with a strong background in deploying optimized AI workloads, containerization, and contributing to core open-source OCI tooling.",
     "location": {
       "address": "43/1, Street no. 7, Sri Senthur Happy Homes, Kovai Road, Annur",
       "postalCode": "641653",
@@ -30,18 +30,20 @@
   "work": [
     {
       "name": "Tinkerblox Inc",
-      "position": "Systems Software Engineer(Rust)",
+      "position": "Systems Engineer Rust",
       "startDate": "2025-10",
-      "summary": "Developed oci compliant low level container runtime to deploy applications in linux namespaces in rust",
+      "summary": "Developed oci low level container runtime to deploy applications in linux namespaces that is a drop-in replacement for runc and also worked on cri-protocol grpc that can communicate with kubernetes and deploy applications in cloud infrastructure",
       "highlights": [
-        "Used rustix crate to build oci compliant low level container runtime that is faster than existing open source runtime youki",
-        "Optimized system call efficiency by utilizing rustix crate to interface directly with the Linux kernel, reducing latency in the container lifecycle.",
-        "Ensured OCI specification parity, allowing the runtime to function as a drop-in replacement for existing container engines like runc"
+        "Engineered a high-performance, OCI-compliant container runtime in Rust as a drop-in replacement for runc, significantly accelerating container startup and execution times.",
+        "Architected a gRPC-based Container Runtime Interface (CRI) protocol to enable seamless communication with Kubernetes and orchestrate workloads across cloud infrastructure.",
+        "Leveraged Rust’s memory safety to implement low-level Linux primitives (clone, pivot_root, unshare) via nix and libc crates, reducing system call latency without garbage collection overhead.",
+        "Enforced strict process isolation and predictable resource allocation by implementing Linux Namespaces and Cgroups v2.",
+        "Ensured full OCI specification parity to guarantee seamless compatibility and integration with existing container engines and orchestration workflows."
       ],
       "skills": [
-        "Linux Kernel Interactions",
-        "Rust",
-        "OCI Containerisation"
+        "Systems Programming",
+        "Linux Kernel Architecture",
+        "Cloud Infrastructure & Kubernetes Integration"
       ]
     },
     {
