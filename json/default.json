@@ -43,12 +43,13 @@
       "skills": [
         "Systems Programming",
         "Linux Kernel Architecture",
-        "Cloud Infrastructure & Kubernetes Integration"
+        "Cloud Infrastructure & Kubernetes Integration",
+        "Rust"
       ]
     },
     {
-      "name": "DoaZ (Remote)",
-      "position": "GenAI Developer",
+      "name": "DoaZ",
+      "position": "AI Engineer",
       "startDate": "2024-04",
       "endDate": "2025-10",
       "summary": "Developed and deployed a Retrieval-Augmented Generation (RAG) chatbot to provide rapid answers from complex Korean Construction Rules & Regulation documents.",
@@ -69,8 +70,8 @@
       ]
     },
     {
-      "name": "Upwork (Remote)",
-      "position": "RAG Application Developer",
+      "name": "Upwork",
+      "position": "AI Engineer",
       "startDate": "2023-11",
       "endDate": "2024-04",
       "summary": "Built a rag chatbot that searched through pdf files and csv files to answer user questions",
@@ -87,10 +88,10 @@
     },
     {
       "name": "Gilbert Research Institute (Coimbatore)",
-      "position": "Data Scientist Intern",
+      "position": "Data Scientist",
       "startDate": "2023-08",
       "endDate": "2023-11",
-      "summary": "Learnt ML concepts and built Lung and Liver Tumor Detection ML models",
+      "summary": "Built Lung and Liver Tumor Detection ML models",
       "highlights": [
         "Developed a medical image analysis solution for Lung and Liver Tumor segmentation.",
         "Utilized PyTorch and Convolutional Neural Networks (CNNs) to build and train the segmentation models.",
