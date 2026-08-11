@@ -3,10 +3,10 @@
     "name": "G Vibu Vignesh",
     "label": "Systems Engineer (Rust)",
     "image": "",
-    "email": "viboognesh1999@gmail.com",
+    "email": "gviboognesh99@gmail.com",
     "phone": "9123503384",
     "url": "https://viboognesh.github.io/Resume/default/resume.html",
-    "summary": "Systems Engineer specializing in Rust and low-level Linux kernel primitives. Experienced in building high-performance cloud-native infrastructure, including OCI-compliant container runtimes, CRI protocols, and custom process isolation layers (cgroups v2, namespaces). Combines deep systems programming expertise with a strong background in deploying optimized AI workloads, containerization, and contributing to core open-source OCI tooling.",
+    "summary": "Systems Engineer specializing in Rust and low-level Linux kernel primitives and also ebpf programs. Experienced in building high-performance cloud-native infrastructure, including OCI-compliant container runtimes, CRI protocols, and custom process isolation layers (cgroups v2, namespaces). Combines deep systems programming expertise with a strong background in deploying optimized AI workloads, containerization, and contributing to core open-source OCI tooling.",
     "location": {
       "address": "43/1, Street no. 7, Sri Senthur Happy Homes, Kovai Road, Annur",
       "postalCode": "641653",
@@ -15,6 +15,11 @@
       "region": "Tamil Nadu"
     },
     "profiles": [
+      {
+        "network": "Codeberg",
+        "username": "viboognesh",
+        "url": "https://codeberg.org/viboognesh"
+      },
       {
         "network": "GitHub",
         "username": "viboognesh",
@@ -120,7 +125,7 @@
       "organization": "youki",
       "projectUrl": "https://github.com/youki-dev/youki",
       "prUrl": "https://github.com/youki-dev/youki/pull/3404",
-      "description": "Added support for the new `SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV` flag in youki to align with OCI runtime spec v1.3 updates.",
+      "description": "Added support for the new SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV flag in youki to align with OCI runtime spec v1.3 updates.",
       "highlights": [],
       "skills": []
     },
@@ -128,7 +133,7 @@
       "organization": "oci-spec-rs",
       "projectUrl": "https://github.com/youki-dev/oci-spec-rs",
       "prUrl": "https://github.com/youki-dev/oci-spec-rs/pull/310",
-      "description": "Added `SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV` to the seccomp configuration to support OCI Runtime Spec v1.3.0 and improve killable wait behavior in seccomp user notifications.",
+      "description": "Added SECCOMP_FILTER_FLAG_WAIT_KILLABLE_RECV to the seccomp configuration to support OCI Runtime Spec v1.3.0 and improve killable wait behavior in seccomp user notifications.",
       "highlights": [],
       "skills": []
     }
@@ -161,5 +166,16 @@
   ],
   "interests": [],
   "references": [],
-  "projects": []
+  "projects": [
+    {
+      "name": "ebpf-network-packet-parser",
+      "description": "Parsing network packets directly from nic using XDP ebpf with aya rust",
+      "highlights": [],
+      "url": "https://codeberg.org/viboognesh/aya-xdp-ebpf",
+      "skills": [
+        "ebpf",
+        "Rust"
+      ]
+    }
+  ]
 }
