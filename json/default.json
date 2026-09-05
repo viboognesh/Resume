@@ -177,6 +177,17 @@
         "ebpf",
         "Rust"
       ]
+    },
+    {
+      "name": "ebpf-rate-limiter",
+      "description": "Keep track of time of each tcp connections to server from each ip address  and allow only a limited number of connections per a period of time directly in kernel using ebpf",
+      "highlights": [],
+      "url": "https://codeberg.org/viboognesh/ebpf-rate-limiter",
+      "skills": [
+        "ebpf",
+        "Rust",
+        "aya"
+      ]
     }
   ]
 }
