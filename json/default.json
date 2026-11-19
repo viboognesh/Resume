@@ -34,9 +34,20 @@
   },
   "work": [
     {
+      "name": "Orion Innovations",
+      "position": "Rust Systems Engineer",
+      "startDate": "2026-11",
+      "summary": "",
+      "highlights": [],
+      "skills": [
+        "Rust"
+      ]
+    },
+    {
       "name": "Tinkerblox Inc",
       "position": "Systems Software Engineer",
       "startDate": "2025-10",
+      "endDate": "2026-08",
       "summary": "Developed oci low level container runtime to deploy applications in linux namespaces that is a drop-in replacement for runc and also worked on cri-protocol grpc server that can communicate with kubernetes and deploy applications in cloud infrastructure",
       "highlights": [
         "Engineered a high-performance, OCI-compliant container runtime in Rust as a drop-in replacement for runc, significantly accelerating container startup and execution times.",
